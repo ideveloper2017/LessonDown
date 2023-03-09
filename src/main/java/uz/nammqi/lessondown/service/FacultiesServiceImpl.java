@@ -22,7 +22,7 @@ public class FacultiesServiceImpl implements FacultiesService{
 
 
         for(Faculties fc: faculties){
-            if (facultiesRepository.findName(fc.getFacultet_name())==null) {
+            if (facultiesRepository.count()==0) {
                 facultiesRepository.save(fc);
             }
         }

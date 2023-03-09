@@ -15,7 +15,6 @@ public class Department {
     @OneToOne(fetch = FetchType.EAGER)
     private Faculties faculties;
 
-
     public Department() {
     }
 

@@ -30,9 +30,16 @@ public class LessonDownApplication implements CommandLineRunner {
         Faculties faculties=new Faculties();
         faculties.setIs_active(1);
         faculties.setFacultet_name("Муҳандислик коммуникациялари");
-        facultiesService.save(new Faculties("Муҳандислик коммуникациялари",1));
+        facultiesService.save(
+                new Faculties("Муҳандислик коммуникациялари",1),
+                new Faculties("Қурилиш",1),
+                new Faculties("Саноатни ахборотлаштириш",1),
+                new Faculties("Машинасозлик",1),
+                new Faculties("Транспорт",1),
+                new Faculties("Энергетика ва меҳнат мухофазаси",1),
+                new Faculties("Иқтисодиёт ва бошқарув ",1));
 
-//        departmentService.add(new Department(faculties,"Муҳандислик коммуникациялари қурилиши ва монтажи"));
+        departmentService.add(new Department(new Faculties("Муҳандислик коммуникациялари",1),"Муҳандислик коммуникациялари қурилиши ва монтажи"));
 
     }
 }
