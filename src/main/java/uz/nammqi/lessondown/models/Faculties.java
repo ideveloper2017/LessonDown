@@ -5,15 +5,22 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "faculties")
 public class Faculties {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
     private Integer id;
 
     private String facultet_name;
 
     private int is_active;
 
+    public Faculties() {
+    }
+
+    public Faculties(String facultet_name, int is_active) {
+        this.facultet_name = facultet_name;
+        this.is_active = is_active;
+    }
 
     public Integer getId() {
         return id;

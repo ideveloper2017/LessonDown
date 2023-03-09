@@ -15,6 +15,15 @@ public class Department {
     @OneToOne(fetch = FetchType.EAGER)
     private Faculties faculties;
 
+
+    public Department() {
+    }
+
+    public Department(Faculties faculties, String department_name) {
+        this.faculties = faculties;
+        this.department_name = department_name;
+    }
+
     private String department_name;
 
     public Integer getId() {
