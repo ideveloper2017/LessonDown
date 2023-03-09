@@ -32,7 +32,7 @@ public class LessonDownApplication implements CommandLineRunner {
         faculties.setFacultet_name("Муҳандислик коммуникациялари");
         facultiesService.save(new Faculties("Муҳандислик коммуникациялари",1));
 
-        departmentService.add(new Department(faculties,"Муҳандислик коммуникациялари қурилиши ва монтажи"));
+//        departmentService.add(new Department(faculties,"Муҳандислик коммуникациялари қурилиши ва монтажи"));
 
     }
 }
