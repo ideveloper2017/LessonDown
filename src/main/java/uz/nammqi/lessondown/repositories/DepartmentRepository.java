@@ -7,5 +7,5 @@ import uz.nammqi.lessondown.models.Department;
 @Repository
 public interface DepartmentRepository extends JpaRepository<Department, Integer> {
 
-    Department findByDepartment_name(String name);
+//    Department findByDepartment_name(String name);
 }

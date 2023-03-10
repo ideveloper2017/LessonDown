@@ -6,6 +6,6 @@ import uz.nammqi.lessondown.models.Faculties;
 public interface FacultiesService {
 
 
-    public void save(Faculties...faculties);
+    public void save(Faculties... faculties);
 
 }

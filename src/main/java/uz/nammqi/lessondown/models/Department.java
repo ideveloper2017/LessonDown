@@ -9,21 +9,21 @@ import java.util.Set;
 public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
     private Integer id;
 
     @OneToOne(fetch = FetchType.EAGER)
     private Faculties faculties;
+    private String depname;
 
     public Department() {
     }
 
-    public Department(Faculties faculties, String department_name) {
+    public Department(Faculties faculties, String depname) {
         this.faculties = faculties;
-        this.department_name = department_name;
+        this.depname = depname;
     }
 
-    private String department_name;
+
 
     public Integer getId() {
         return id;
@@ -42,10 +42,10 @@ public class Department {
     }
 
     public String getDepartment_name() {
-        return department_name;
+        return depname;
     }
 
     public void setDepartment_name(String department_name) {
-        this.department_name = department_name;
+        this.depname = department_name;
     }
 }

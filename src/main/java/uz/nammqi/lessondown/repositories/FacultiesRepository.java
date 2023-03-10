@@ -8,8 +8,7 @@ import uz.nammqi.lessondown.models.Faculties;
 import java.util.List;
 
 @Repository
-public interface FacultiesRepository  extends JpaRepository<Faculties, Integer> {
-
+public interface FacultiesRepository extends JpaRepository<Faculties, Integer> {
 
 
 }

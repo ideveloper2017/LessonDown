@@ -13,16 +13,13 @@ public class DepartmentServiceImpl implements DepartmentService {
 
     @Autowired
     DepartmentRepository deparmentrepository;
-
     @Override
     public void add(Department... department) {
-        for(Department dep: department){
-            if (deparmentrepository.findByDepartment_name(dep.getDepartment_name())==null) {
-                deparmentrepository.save(dep);
-
-            }
-        }
-
+//        for (Department dep : department) {
+//            if (deparmentrepository.findByDepartment_name(dep.getDepartment_name()) == null) {
+//                deparmentrepository.save(dep);
+//            }
+//        }
     }
 
     @Override

@@ -8,7 +8,7 @@ import uz.nammqi.lessondown.models.Faculties;
 import uz.nammqi.lessondown.repositories.FacultiesRepository;
 
 @Service
-public class FacultiesServiceImpl implements FacultiesService{
+public class FacultiesServiceImpl implements FacultiesService {
 
     @Autowired
     FacultiesRepository facultiesRepository;
@@ -20,9 +20,8 @@ public class FacultiesServiceImpl implements FacultiesService{
     public void save(Faculties... faculties) {
 
 
-
-        for(Faculties fc: faculties){
-            if (facultiesRepository.count()==0) {
+        for (Faculties fc : faculties) {
+            if (facultiesRepository.count() == 0) {
                 facultiesRepository.save(fc);
             }
         }
